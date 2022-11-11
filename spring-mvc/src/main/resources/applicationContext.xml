@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--这种方法全部扫描，效率滴-->
+<!--    <context:component-scan base-package="com.ljc"></context:component-scan>-->
+    <context:component-scan base-package="com.ljc.mapper.impl"></context:component-scan>
+    <context:component-scan base-package="com.ljc.service.impl"></context:component-scan>
+    <context:component-scan base-package="com.ljc.controller"></context:component-scan>
+
+
+    <bean class="com.ljc.pojo.School" name="school">
+        <property name="name" value="河大"></property>
+        <property name="addriss" value="开封"></property>
+    </bean>
+    <bean name="student" class="com.ljc.pojo.Student">
+        <property name="id" value="2"></property>
+        <property name="name" value="张三666"></property>
+        <property name="school" ref="school"></property>
+    </bean>
+
+<!--    <bean class="com.ljc.mapper.impl.studentMapperImpl" name="studentMapper"></bean>-->
+<!--    -->
+<!--    <bean class="com.ljc.service.impl.userServiceImpl" name="userService">-->
+<!--        <property name="studentMapper" ref="studentMapper"></property>-->
+<!--    </bean>-->
+
+<!--    <bean class="com.ljc.controller.controller" name="controller">-->
+<!--        <property name="userService" ref="userService"></property>-->
+<!--    </bean>-->
+</beans>

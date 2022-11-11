@@ -1,0 +1,9 @@
+# 项目排除路径
+/mybatis/target/
+/mybatis--curd/target/
+/mybatis--web/target/
+/spring-mvc/target/
+/spring-sm/target/
+/springMVC-ajax/target/
+/springMvc-demo/target/
+/ssmybatis/target/

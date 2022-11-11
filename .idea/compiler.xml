@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-mvc" />
+        <module name="springMVC-ajax" />
+        <module name="springMvc-demo" />
+        <module name="mybatis" />
+        <module name="spring-sm" />
+        <module name="mybatis--curd" />
+        <module name="mybatis--web" />
+        <module name="ssmybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis" target="1.8" />
+      <module name="mybatis--crud" target="17" />
+      <module name="mybatis--curd" target="17" />
+      <module name="mybatis--web" target="17" />
+      <module name="spring+mvc+mybatis" target="17" />
+      <module name="spring-mvc" target="17" />
+      <module name="spring-sm" target="17" />
+      <module name="springMVC-ajax" target="17" />
+      <module name="springMvc-demo" target="17" />
+      <module name="ssm-spring+mvc+mybatis" target="17" />
+      <module name="ssmybatis" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
